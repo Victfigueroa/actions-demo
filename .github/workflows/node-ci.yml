@@ -17,6 +17,6 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Mostrar entorno
-        run: echo Entorno actual: ${{ secrets.NODE_ENV }}
-      - name: Run tests # Esta línea debe tener la misma indentación que los otros 'name' en 'steps'
+        run: echo "Entorno actual: ${{ secrets.NODE_ENV }}"
+      - name: Run tests
         run: npm test
