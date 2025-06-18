@@ -45,7 +45,8 @@ Este proyecto implementa un entorno de integración continua (CI) usando GitHub 
 
 ## Automatización en otros aspectos del proyecto
 
-1. **Despliegue automático:** Agregar un job que despliegue en Vercel o Heroku una vez pasadas las pruebas.
+1. **Despliegue Continuo Automatizado:**
+Implementaremos un proceso de despliegue continuo (CD) configurando un "job" o tarea automatizada en nuestra pipeline de integración continua (CI/CD). Este job se encargará de desplegar automáticamente la aplicación en plataformas como Vercel o Heroku una vez que todas las pruebas automatizadas (unitarias, de integración, etc.) hayan sido superadas exitosamente. Esto asegura que solo las versiones estables y validadas del código lleguen a producción, reduciendo errores manuales y acelerando el ciclo de lanzamiento.
 2. **Auditoría de dependencias:** Usar `npm audit` o integrar Dependabot para detectar y corregir vulnerabilidades.
 3. **Build automático:** Ejecutar tareas de construcción al hacer push en ramas específicas, generando versiones listas para producción.
 
